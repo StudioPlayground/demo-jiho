@@ -1,10 +1,10 @@
 package me.jiho.demo.account.application.service.command;
 
 import lombok.RequiredArgsConstructor;
-import me.jiho.demo.account.application.model.AccountCreateCommand;
-import me.jiho.demo.account.domain.port.inbound.AccountCreateUseCase;
-import me.jiho.demo.account.domain.model.Account;
-import me.jiho.demo.account.domain.port.outbound.AccountCreatePort;
+import me.jiho.demo.account.application.port.in.model.AccountCreateCommand;
+import me.jiho.demo.account.application.port.in.AccountCreateUseCase;
+import me.jiho.demo.account.domain.aggregate.Account;
+import me.jiho.demo.account.application.port.out.AccountCreatePort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
